@@ -30,7 +30,7 @@ RUN POETRY_HOME=/opt/poetry poetry config virtualenvs.create false
 COPY ./app/pyproject.toml ./app/poetry.lock* /app/
 
 # Allow installing dev dependencies to run tests
-RUN POETRY_HOME=/opt/poetry poetry config repositories.pypi https://${PYPI}/simple
+RUN POETRY_HOME=/opt/poetry poetry config repositories.mirrorcn https://${PYPI}/simple/
 ARG INSTALL_DEV=false
 RUN bash -c "if [ $INSTALL_DEV == 'true' ] ; then poetry install -vvv --no-root ; else poetry install -vvv --no-root --no-dev ; fi"
 
