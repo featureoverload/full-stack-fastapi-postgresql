@@ -5,10 +5,9 @@ description = ""
 authors = ["Admin <admin@example.com>"]
 
 [[tool.poetry.source]]
-name = "zh-cn.pypi"
-# url = "https://mirrors.aliyun.com/pypi/simple"
-# url = "https://pypi.tuna.tsinghua.edu.cn/simple"
-url = "https://pypi.doubanio.com/simple"
+name = "mirrorcn"
+url = "https://pypi.doubanio.com/simple/"
+default = true
 
 [tool.poetry.dependencies]
 python = "^3.7"
