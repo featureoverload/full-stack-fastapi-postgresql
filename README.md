@@ -72,6 +72,8 @@ Generate a backend and frontend stack using Python, including interactive API do
 ```bash
 pip install cookiecutter
 cookiecutter https://github.com/featureoverload/full-stack-fastapi-postgresql
+### 或者使用Gitee上的镜像仓库创建：
+cookiecutter https://gitee.com/featureoverload/full-stack-fastapi-postgresql
 ```
 
 ### Generate passwords
